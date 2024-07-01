@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1038225977569",
+    "project_id": "medtrack-8dc4a",
+    "storage_bucket": "medtrack-8dc4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038225977569:android:d714375575b8fdf0d447a0",
+        "android_client_info": {
+          "package_name": "com.example.med"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8TPzK467oB-GSwSQ9NWagXPAxt7R_5wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038225977569:android:19c6b56ad3be18a7d447a0",
+        "android_client_info": {
+          "package_name": "com.example.medtrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8TPzK467oB-GSwSQ9NWagXPAxt7R_5wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
