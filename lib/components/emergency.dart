@@ -27,7 +27,7 @@ class LoadingButtonState extends State<LoadingButton>
   }
 
   void _sendSMS() async {
-    const String message = "EMERGENCY ";
+    const String message = "This is an alert message!";
     final Uri smsUri = Uri(
       scheme: 'sms',
       path: Users.number,

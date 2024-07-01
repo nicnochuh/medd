@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:med/components/userdetails.dart';
 
 class Users extends StatefulWidget {
-  static String number = ;
+  static String number = 'emer';
 
   const Users({super.key});
 
