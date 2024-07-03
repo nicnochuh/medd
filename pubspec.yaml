@@ -44,8 +44,10 @@ dependencies:
   cloud_firestore: ^5.0.2
   fluro: ^2.0.5
   url_launcher: ^6.3.0
-  flutter_datetime_picker: ^1.5.1
-  
+
+  intl: ^0.19.0
+  flutter_datetime_picker_plus: ^2.2.0
+
 
  
  
@@ -53,13 +55,6 @@ dependencies:
 dev_dependencies:
   flutter_test:
    sdk: flutter
-
-  
-
-  
- 
-
-
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

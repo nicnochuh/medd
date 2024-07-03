@@ -29,10 +29,10 @@ class LoadingButtonState extends State<LoadingButton>
   }
 
   void _sendSMS() async {
-    const String message = "This is an alert message!";
+    const String message = "This%20is%20an%20alert%20message!";
     final Uri smsUri = Uri(
       scheme: 'sms',
-      path: '$emer',
+      path: emer,
       queryParameters: <String, String>{'body': message},
     );
 
