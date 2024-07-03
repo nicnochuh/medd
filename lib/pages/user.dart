@@ -2,11 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:med/components/user_data.dart';
 import 'package:med/components/userdetails.dart';
 
 class Users extends StatefulWidget {
-  static String number = 'emer';
-
   const Users({super.key});
 
   @override
@@ -64,6 +63,9 @@ class _UserState extends State<Users> {
 //update in firestore
     if (newValue.trim().isNotEmpty) {
       await usersCollection.doc(currentUser.email).update({field: newValue});
+      if (field == 'emer') {
+        UserData.emer = newValue; // Update the static member
+      }
     }
   }
 
@@ -94,6 +96,7 @@ class _UserState extends State<Users> {
           //get user data
           if (snapshot.hasData) {
             final userdata = snapshot.data!.data() as Map<String, dynamic>;
+
             return ListView(
               children: [
                 const Column(
@@ -181,6 +184,8 @@ class _UserState extends State<Users> {
                   sectionName: 'emergency number',
                   onpressed: () => editfield('emer'),
                 ),
+                //allergies
+                //
               ],
             );
           } else if (snapshot.hasError) {

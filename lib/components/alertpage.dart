@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:med/pages/user.dart';
 
 class AlertPage extends StatelessWidget {
-  // Predefined phone numb
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,12 +17,9 @@ class AlertPage extends StatelessWidget {
               ),
             ),
           ),
-          Text("ALERT SEND TO ",
+          Text("ALERT SEND",
               style: GoogleFonts.bebasNeue(
                   textStyle: const TextStyle(fontSize: 50, color: Colors.red))),
-          Text(
-            Users.number,
-          ),
         ],
       ),
     );

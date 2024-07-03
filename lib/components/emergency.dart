@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:med/components/alertpage.dart';
-import 'package:med/pages/user.dart';
+import 'package:med/components/user_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LoadingButton extends StatefulWidget {
-  const LoadingButton({super.key});
+  LoadingButton({super.key});
 
   @override
   LoadingButtonState createState() => LoadingButtonState();
@@ -13,6 +13,8 @@ class LoadingButton extends StatefulWidget {
 
 class LoadingButtonState extends State<LoadingButton>
     with SingleTickerProviderStateMixin {
+  // Access the static member
+  String emer = UserData.emer;
   late AnimationController controller;
 
   @override
@@ -30,7 +32,7 @@ class LoadingButtonState extends State<LoadingButton>
     const String message = "This is an alert message!";
     final Uri smsUri = Uri(
       scheme: 'sms',
-      path: Users.number,
+      path: '$emer',
       queryParameters: <String, String>{'body': message},
     );
 
