@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:med/components/alertpage.dart';
+import 'package:med/pages/alertpage.dart';
 import 'package:med/components/user_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class LoadingButton extends StatefulWidget {
-  LoadingButton({super.key});
+  const LoadingButton({super.key});
 
   @override
   LoadingButtonState createState() => LoadingButtonState();
@@ -29,7 +29,7 @@ class LoadingButtonState extends State<LoadingButton>
   }
 
   void _sendSMS() async {
-    const String message = "This%20is%20an%20alert%20message!";
+    const String message = "This_is%2_an_alert_message!";
     final Uri smsUri = Uri(
       scheme: 'sms',
       path: emer,
@@ -47,7 +47,7 @@ class LoadingButtonState extends State<LoadingButton>
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => AlertPage(),
+        builder: (context) => const AlertPage(),
       ),
     );
   }
@@ -96,7 +96,7 @@ class LoadingButtonState extends State<LoadingButton>
                     value: controller.value,
                     strokeAlign: 12,
                     strokeWidth: 20,
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.red),
                   ),
                   Container(
                     decoration: const BoxDecoration(

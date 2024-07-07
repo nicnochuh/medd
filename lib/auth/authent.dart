@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:med/pages/homescreen.dart';
 import 'package:med/pages/loginorregister.dart';
 
-class authpage extends StatelessWidget {
-  const authpage({super.key});
+class Authpage extends StatelessWidget {
+  const Authpage({super.key});
 
   @override
   Widget build(BuildContext context) {

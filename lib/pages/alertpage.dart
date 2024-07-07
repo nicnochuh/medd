@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AlertPage extends StatelessWidget {
+  const AlertPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,11 +12,9 @@ class AlertPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Container(
-              child: Image.asset(
-                'lib/icons/emergency.png',
-                height: 50,
-              ),
+            child: Image.asset(
+              'lib/icons/emergency.png',
+              height: 50,
             ),
           ),
           Text("ALERT SEND",

@@ -2,20 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:med/auth/authent.dart';
 
-class intro extends StatefulWidget {
-  const intro({super.key});
+class Intro extends StatefulWidget {
+  const Intro({super.key});
 
   @override
-  State<intro> createState() => _introState();
+  State<Intro> createState() => _introState();
 }
 
-class _introState extends State<intro> {
+class _introState extends State<Intro> {
   //show loading circle
   void reminderbox() async {
     Navigator.push(
-      context as BuildContext,
+      context,
       MaterialPageRoute(
-        builder: (context) => authpage(),
+        builder: (context) => const Authpage(),
       ),
     );
   }

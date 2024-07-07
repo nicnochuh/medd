@@ -23,7 +23,7 @@ class _HomepageState extends State<Homepage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => ReminderPage(),
+        builder: (context) => const ReminderPage(),
       ),
     );
   }
@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
     //go to user profile
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => Users()),
+      MaterialPageRoute(builder: (context) => const Users()),
     );
   }
 
@@ -225,8 +225,8 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
             ),
-            //operationsbox
 
+            //operationsbox
             /*   const Padding(
               padding: EdgeInsets.symmetric(horizontal: 25),
               child: operationbox(
